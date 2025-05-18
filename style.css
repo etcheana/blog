@@ -1,0 +1,127 @@
+
+#FotoPerfil
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 40px;
+    border: 4px solid transparent;
+  transition: border-color 0.4s ease;
+  cursor: pointer;
+
+}
+
+#FotoPerfil:hover 
+{
+ border-color: #e91e63;
+}
+
+
+a{
+  text-decoration: none;
+}
+.Iconos img {
+    width: 50px; 
+    height: auto; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.Iconos img:hover {
+    transform: scale(1.1); 
+}
+
+#Nombre{
+    font-family: "Edu QLD Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+#Subtitulo
+{
+    font-weight: 600;
+
+
+}
+
+
+body {
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imagenes/fondo2.jpg);
+    background-position: center; 
+    background-repeat: repeat; 
+    margin: 0;
+  }
+
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 30px;
+  }
+  
+  .btn-border-animation {
+    padding: 15px 30px;
+    background: none;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+    
+    width: 550px; 
+    display: block;
+    text-align: center;
+
+    font-family: "Montserrat Underline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: x-large;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+  }
+  
+  .boton-doble-subrayado {
+    position: relative;
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    padding: 18px 0;
+    background: none;
+    border: 3px double #e91e63;
+    color: #e91e63;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .boton-doble-subrayado::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #f3578b;
+    left: 0;
+    bottom: 0;
+    transition: width 0.4s ease;
+  }
+
+  .boton-doble-subrayado:hover::after {
+    width: 100%;
+  }
+
+  .boton-doble-subrayado:hover {
+    background-color: #f48fb1;
+    color: white;
+  }
